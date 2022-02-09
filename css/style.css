@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-color: gray;
+  background-color: rgb(19, 91, 84);
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -78,7 +78,7 @@ p{
 #contact > p:first-child {
   background-color: lightgreen;
   height: 60px;
-  width: 125px;
+  width: 50%;
   align-items: center;
   justify-content: center;
   font-size:xx-large;
@@ -88,7 +88,7 @@ p{
 #contact > p:last-child {
   background-color: rgb(93, 205, 93);
   height: 60px;
-  width: 125px;
+  width: 50%;
   align-items: center;
   justify-content: center;
   font-size:xx-large;
@@ -151,12 +151,14 @@ p{
 
   #contact{
     grid-area: contact;
+    
   }
 
-  #contact > p:first-child{
-    align-items: center;
-    justify-content: center;
+  #contact p{
+    text-align: center;
   }
+
+
 
 
 
