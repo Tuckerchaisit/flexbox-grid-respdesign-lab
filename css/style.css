@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: gray;
+  /* Use a system font, if none are available use an available sans-sarif font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  width: 250px;
+  background-color: white;
+  text-align: center;
+}
+
+#status {
+  text-align: right;
+  color: lightgray;
+  padding: 8px 15px 0 0;
+  font-size: smaller;
+}
+
+img{
+  border-radius: 50%;
+  border: solid 5px rgb(93, 205, 93)
+}
+
+#name{
+  margin: 0;
+  font-size: 23px;
+  padding: 10px 0;
+}
+
+p{
+  margin: 0;
+}
+
+#occupation{
+  background-color: rgba(211, 211, 211, 0.291);
+  padding: 12px 0;
+  color: rgb(96, 96, 96);
+}
+
+#brand{
+  display: none;
+}
+
+#offer{
+  padding: 16px 0;
+}
+
+#contact {
+  display: flex;
+}
+
+#contact > p:first-child {
+  background-color: lightgreen;
+  height: 60px;
+  width: 125px;
+  align-items: center;
+  justify-content: center;
+  font-size:xx-large;
+  padding: 10px 0;
+}
+
+#contact > p:last-child {
+  background-color: rgb(93, 205, 93);
+  height: 60px;
+  width: 125px;
+  align-items: center;
+  justify-content: center;
+  font-size:xx-large;
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    display: grid;
+    text-align: left;
+    width: 550px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+      "status name"
+      "img occupation"
+      "img brand" 
+      "contact offer";
+  }
+  
+
+
+
+
+
