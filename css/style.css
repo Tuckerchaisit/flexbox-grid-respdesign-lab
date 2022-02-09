@@ -99,7 +99,7 @@ p{
   main {
     display: grid;
     text-align: left;
-    width: 550px;
+    width: 500px;
     grid-template-columns: 40% 60%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
@@ -108,8 +108,55 @@ p{
       "img brand" 
       "contact offer";
   }
-  
 
+  #status{
+    text-align: left;
+    padding: 10px 0 0 20px;
+    grid-area: status;
+  }
+
+  img{
+    grid-area: img;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  #name, #occupation, #offer {
+    background-color: rgba(211, 211, 211, 0.291);
+    padding-left: 20px;
+  }
+
+  #name{
+    grid-area: name;
+    font-size: 30px;
+  }
+
+  #occupation{
+    grid-area: occupation;
+    font-size: 15px;
+  }
+
+  #brand{
+    display: inline;
+    background-color: rgba(211, 211, 211, 0.291);
+    border-left:solid 3px rgb(93, 205, 93);
+    padding:0 20px 0 20px;
+    color: rgb(189, 186, 186);
+    font-size: 13px;
+  }
+
+  #offer{
+    grid-area: offer;
+  }
+
+  #contact{
+    grid-area: contact;
+  }
+
+  #contact > p:first-child{
+    align-items: center;
+    justify-content: center;
+  }
 
 
 
